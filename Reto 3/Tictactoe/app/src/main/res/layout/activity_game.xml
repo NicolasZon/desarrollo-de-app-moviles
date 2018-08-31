@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sastoque.nicolas.tictactoe.game"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btnNuevoJuego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:text="Nuevo Juego"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="120dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/btn4"
+        app:layout_constraintEnd_toStartOf="@+id/btn2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginStart="290dp"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/btn5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginTop="10dp"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/btn6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="163dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="168dp"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/btnNuevoJuego"
+        app:layout_constraintEnd_toStartOf="@+id/btn5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="388dp"
+        android:layout_marginEnd="333dp"
+        android:layout_marginStart="333dp"
+        android:layout_marginTop="469dp"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/btnNuevoJuego"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.572" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="163dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="168dp"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/btnNuevoJuego"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.572" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="49dp"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/btnNuevoJuego"
+        app:layout_constraintEnd_toStartOf="@+id/btn8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginStart="130dp"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/btnNuevoJuego"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="49dp"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/btnNuevoJuego"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn8"
+        app:layout_constraintTop_toBottomOf="@+id/btn6"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
