@@ -1,101 +1,162 @@
 package sastoque.nicolas.tictactoe;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
-public class game extends AppCompatActivity implements View.OnClickListener {
 
-    protected Button btnNuevoJuego,btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9;
-    protected Button[] tablerofront;
 
-    Object[] tableroback;
-    String turno;
 
-    public void nuevoJuego(){
-        tableroback = new Object[10];
-        for(int i=0; i<10; i++){
-            tableroback[i] = "";
-        }
-        turno = "X";
-    }
+public class game extends AppCompatActivity {
+
+    //Represents the internal state of the game
+    private gameIA mGame;
+
+    //human first or not
+    private boolean mhumanFirst;
+
+    //the numbers of wins
+    private int mAndroidWins;
+    private int mHumanWins;
+    private int mTie;
+
+    //text views
+    private TextView mNumberHuman;
+    private TextView mNumberTie;
+    private TextView mNumberAndroid;
+
+    //game over
+    private boolean mGameOver;
+
+    //buttons making the board
+    private Button mBoardButtons[];
+
+    //various text displayed
+    private TextView mInfoTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-        btn1 = (Button)findViewById(R.id.btn1);
-        btn2 = (Button)findViewById(R.id.btn2);
-        btn3 = (Button)findViewById(R.id.btn3);
+        mBoardButtons = new Button[gameIA.BOARD_SIZE];
+        mBoardButtons[0] = (Button) findViewById(R.id.one);
+        mBoardButtons[1] = (Button) findViewById(R.id.two);
+        mBoardButtons[2] = (Button) findViewById(R.id.three);
+        mBoardButtons[3] = (Button) findViewById(R.id.four);
+        mBoardButtons[4] = (Button) findViewById(R.id.five);
+        mBoardButtons[5] = (Button) findViewById(R.id.six);
+        mBoardButtons[6] = (Button) findViewById(R.id.seven);
+        mBoardButtons[7] = (Button) findViewById(R.id.eight);
+        mBoardButtons[8] = (Button) findViewById(R.id.nine);
 
-        btn4 = (Button)findViewById(R.id.btn4);
-        btn5 = (Button)findViewById(R.id.btn5);
-        btn6 = (Button)findViewById(R.id.btn6);
+        mInfoTextView = (TextView) findViewById(R.id.information);
 
-        btn7 = (Button)findViewById(R.id.btn7);
-        btn8 = (Button)findViewById(R.id.btn8);
-        btn9 = (Button)findViewById(R.id.btn9);
+        mNumberHuman = (TextView) findViewById(R.id.human);
+        mNumberTie = (TextView) findViewById(R.id.tie);
+        mNumberAndroid = (TextView) findViewById(R.id.android);
 
-        nuevoJuego();
+        mGame = new gameIA();
+        mAndroidWins = 0;
+        mHumanWins=0;
+        mTie=0;
+        mhumanFirst = false;
+        startNewGame();
+    }
 
-        tablerofront = new Button[]{btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9};
-        for(Button btn : tablerofront){
-            btn.setOnClickListener(this);
+    private void startNewGame(){
+        mGame.clearBoard();
+
+        mhumanFirst=!mhumanFirst;
+
+        for(int i=0;i<mBoardButtons.length; i++) {
+            mBoardButtons[i].setText("");
+            mBoardButtons[i].setEnabled(true);
+            mBoardButtons[i].setOnClickListener(new ButtonClickListener(i));
         }
+        mGameOver=false;
+
+        //human goes first
+        if(mhumanFirst){
+            mInfoTextView.setText(R.string.first_human);
+        } else {
+            mInfoTextView.setText(R.string.first_android);
+            int move = mGame.getComputerMove();
+            setMove(gameIA.COMPUTER_PLAYER,move);
+            mInfoTextView.setText(R.string.turn_human);
+        }
+    }
+
+    private class ButtonClickListener implements View.OnClickListener {
+        int location;
+
+        public ButtonClickListener(int location){
+            this.location=location;
+        }
+
+        public void onClick(View view){
+            if(mBoardButtons[location].isEnabled() && !mGameOver){
+                setMove(gameIA.HUMAN_PLAYER, location);
+
+                //if no winner yet, let the computer make a move
+                int winner = mGame.checkForWinner();
+                if(winner==0){
+                    mInfoTextView.setText(R.string.turn_computer);
+                    int move = mGame.getComputerMove();
+                    setMove(gameIA.COMPUTER_PLAYER, move);
+                    winner = mGame.checkForWinner();
+                }
+
+                if(winner==0){
+                    mInfoTextView.setText(R.string.turn_human);
+                } else if ( winner == 1){
+                    mInfoTextView.setText(R.string.result_tie);
+                    mTie++;
+                    mNumberTie.setText("Ties : " + mTie);
+                    mGameOver=true;
+                } else if (winner == 2){
+                    mInfoTextView.setText(R.string.result_human_wins);
+                    mHumanWins++;
+                    mNumberHuman.setText("Human : " + mHumanWins);
+                    mGameOver=true;
+                } else {
+                    mInfoTextView.setText(R.string.result_computer_wins);
+                    mAndroidWins++;
+                    mNumberAndroid.setText("Android : " + mAndroidWins);
+                    mGameOver=true;
+                }
+            }
+        }
+    }
+
+    private void setMove(char player,int location){
+
+        mGame.setMove(player,location);
+        mBoardButtons[location].setEnabled(false);
+        mBoardButtons[location].setText(String.valueOf(player));
+        if(player == gameIA.HUMAN_PLAYER )
+            mBoardButtons[location].setTextColor(Color.rgb(0,200,0));
+        else
+            mBoardButtons[location].setTextColor(Color.rgb(200,0,0));
     }
 
     @Override
-    public void onClick(View v) {
-        //do something...
-        Button btn = (Button)v;
+    public boolean onCreateOptionsMenu(Menu menu){
+        super.onCreateOptionsMenu(menu);
+        menu.add("REINICIAR JUEGO");
+        return true;
     }
 
-    public void click(Button btn){
-        int x = 0;
-        btn.setText(turno);
-
-        switch (btn.getId()){
-            case R.id.btn1:
-                tableroback[1] = turno;
-                break;
-            case R.id.btn2:
-                tableroback[2] = turno;
-                break;
-            case R.id.btn3:
-                tableroback[3] = turno;
-                break;
-
-            case R.id.btn4:
-                tableroback[4] = turno;
-                break;
-            case R.id.btn5:
-                tableroback[5] = turno;
-                break;
-            case R.id.btn6:
-                tableroback[6] = turno;
-                break;
-
-            case R.id.btn7:
-                tableroback[7] = turno;
-                break;
-            case R.id.btn8:
-                tableroback[8] = turno;
-                break;
-            case R.id.btn9:
-                tableroback[9] = turno;
-                break;
-        }
-
-        if(turno == "X"){
-            turno = "O";
-        }
-        else{
-            turno = "X";
-        }
-
-        btn.setClickable(true);
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        startNewGame();
+        return true;
     }
 }
 
