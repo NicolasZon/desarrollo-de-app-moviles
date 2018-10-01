@@ -1,0 +1,103 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\0eb29d96d32c2035bbec043742ba1eea\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\77887b88363d04d1d04383530577ee94\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\a781af1508250925ca632272512ea8a7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\25fbe79ebad10c37ffbdccd93796ed99\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\23d029c26b7ae78e181621ed6b9cf258\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\f9f1f4c8ae30c8892f887a6788e41f60\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\400450f115b982911072cf2ab60315b0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\3105fc2d312a631e698578821a20d46d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\b6eed8a3b76222986a5ad68eaabfceeb\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\75cd00f6bdaf83e6947ad1833c95d13b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a3a9fe7eff381b55ec3a8d1f720e31b1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1d0068a1e0da6b69b8a2f9ff49dca2e9\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:3:5-41
+		INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\77887b88363d04d1d04383530577ee94\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\77887b88363d04d1d04383530577ee94\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:11:9-40
+activity#sastoque.nicolas.tictactoe.game
+ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:12:19-39
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\0eb29d96d32c2035bbec043742ba1eea\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\0eb29d96d32c2035bbec043742ba1eea\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\77887b88363d04d1d04383530577ee94\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\77887b88363d04d1d04383530577ee94\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\a781af1508250925ca632272512ea8a7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\a781af1508250925ca632272512ea8a7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\25fbe79ebad10c37ffbdccd93796ed99\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\25fbe79ebad10c37ffbdccd93796ed99\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\23d029c26b7ae78e181621ed6b9cf258\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\23d029c26b7ae78e181621ed6b9cf258\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\f9f1f4c8ae30c8892f887a6788e41f60\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\f9f1f4c8ae30c8892f887a6788e41f60\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\400450f115b982911072cf2ab60315b0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\400450f115b982911072cf2ab60315b0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\3105fc2d312a631e698578821a20d46d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\3105fc2d312a631e698578821a20d46d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\b6eed8a3b76222986a5ad68eaabfceeb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\b6eed8a3b76222986a5ad68eaabfceeb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\75cd00f6bdaf83e6947ad1833c95d13b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\75cd00f6bdaf83e6947ad1833c95d13b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a3a9fe7eff381b55ec3a8d1f720e31b1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a3a9fe7eff381b55ec3a8d1f720e31b1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1d0068a1e0da6b69b8a2f9ff49dca2e9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Usuario\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1d0068a1e0da6b69b8a2f9ff49dca2e9\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Usuario\Desktop\Reto 6\Tictactoe4\app\src\main\AndroidManifest.xml
