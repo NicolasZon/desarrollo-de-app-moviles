@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBoxPreference
+        android:key="sound"
+        android:title="Sonido"
+        android:defaultValue="true"
+        android:summary="Apaga o prende el sonido" />
+
+    <EditTextPreference
+        android:key="victory_message"
+        android:summary=""
+        android:defaultValue="@string/result_human_wins"
+        android:title="Mensaje de victoria"  />
+
+    <ListPreference
+        android:key="difficulty_level"
+        android:title="Dificultad"
+        android:summary=""
+        android:defaultValue="@string/difficulty_expert"
+        android:entries="@array/list_difficulty_level"
+        android:entryValues="@array/list_difficulty_level" />
+    <com.skydoves.colorpickerpreference.ColorPickerPreference
+        android:key="board_color"
+        android:title="Color del Tablero"
+        android:summary="Cambia el color del tablero"
+        app:preference_dialog_title="Selecciona el color del tablero"
+        app:preference_dialog_positive="confirmar"
+        app:preference_dialog_negative="cancelar"
+        app:preference_palette="@drawable/palette"
+        app:preference_selector="@drawable/wheel"
+        app:default_color="@color/defaultBoardColor"/>
+
+
+</PreferenceScreen>

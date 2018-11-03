@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/new_game"
+        android:title="Nuevo Juego"
+        android:icon="@drawable/new_game" />
+    <item android:id="@+id/settings"
+        android:title="Opciones"
+        android:icon="@drawable/difficulty_level"  />
+    <item android:id="@+id/reset_socores"
+        android:title="Reiniciar puntuación"
+        android:icon="@drawable/quit_game" />
+    <item android:id="@+id/about"
+        android:title="Acerca de"
+        android:icon="@drawable/quit_game" />
+    <item
+        android:id="@+id/quit"
+        android:title="Salir" />
+</menu>
+
+
